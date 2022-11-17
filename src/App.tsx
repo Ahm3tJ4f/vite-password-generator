@@ -1,8 +1,12 @@
+import PasswordSettings from "./PasswordSettings";
+import PasswordTable from "./PasswordTable";
 const App = () => {
   return (
-    <div className="bg-rose-400">
-      <div className="w-10 h-10 bg-red ">hi</div>
-    </div>
+    <main className="">
+      <h1>Password generator</h1>
+      <PasswordTable generatedPassword={""} />
+      <PasswordSettings />
+    </main>
   );
 };
 
