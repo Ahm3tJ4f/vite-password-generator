@@ -2,9 +2,11 @@ import PasswordSettings from "./PasswordSettings";
 import PasswordTable from "./PasswordTable";
 const App = () => {
   return (
-    <main className="">
-      <h1>Password generator</h1>
-      <PasswordTable generatedPassword={"hi"} />
+    <main className="flex flex-col items-center my-16 space-y-10">
+      <h1 className="text-[#939299] font-normal text-2xl">
+        Password generator
+      </h1>
+      <PasswordTable generatedPassword={""} />
       <PasswordSettings />
     </main>
   );
