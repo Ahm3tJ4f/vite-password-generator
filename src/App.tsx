@@ -4,7 +4,7 @@ const App = () => {
   return (
     <main className="">
       <h1>Password generator</h1>
-      <PasswordTable generatedPassword={""} />
+      <PasswordTable generatedPassword={"hi"} />
       <PasswordSettings />
     </main>
   );
