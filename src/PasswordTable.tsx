@@ -5,10 +5,9 @@ interface Props {
 const PasswordTable: React.FC<Props> = ({ generatedPassword }) => {
   const handleClick = () => {
     navigator.clipboard.writeText(generatedPassword);
-    console.log("copied");
   };
   return (
-    <div className="flex rounded-2xl w-[35rem] justify-between bg-[#2B2A33] px-8 py-7  ">
+    <div className="contentBox justify-between">
       <span className="text-3xl">
         {generatedPassword ? generatedPassword : "P4S5w0Rd"}
       </span>
