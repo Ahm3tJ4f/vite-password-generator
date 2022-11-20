@@ -1,0 +1,13 @@
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    background: linear-gradient(
+        to right,
+            #a4ffaf 0%,
+            #a4ffaf 73%,
+            white 73%,
+            white 100%);
+}

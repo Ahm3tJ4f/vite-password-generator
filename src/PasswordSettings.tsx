@@ -13,12 +13,11 @@ const PasswordSettings = () => {
         className="flex justify-between items-center"
         htmlFor="password-length "
       >
-        <span className="text-xl ">Character Length</span>
+        <span className=" ">Character Length</span>
         <span className="text-primaryGreen text-3xl">{length}</span>
       </label>
 
       <input
-        className="slider"
         onChange={handleRange}
         type="range"
         name="password-length"
