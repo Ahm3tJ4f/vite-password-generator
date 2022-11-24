@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 
-const StyledRange = styled.input.attrs({ type: "range" })`
+const StyledRange = styled.input<any>`
   &::-webkit-slider-runnable-track {
     width: 100%;
     height: 10px;
@@ -11,8 +11,8 @@ const StyledRange = styled.input.attrs({ type: "range" })`
     background: linear-gradient(
       to right,
       #a4ffaf 0%,
-      #a4ffaf ${(length / 20) * 100 + "%"},
-      white ${(length / 20) * 100 + "%"},
+      #a4ffaf ${(props) => (props.value / 20) * 95 + "%"},
+      white ${(props) => (props.value / 20) * 95 + "%"},
       white 100%
     );
   }
@@ -40,7 +40,7 @@ const PasswordSettings = () => {
         type="range"
         name="password-length"
         id="password-length"
-        defaultValue={10}
+        value={length}
         max={20}
         min={1}
       />
