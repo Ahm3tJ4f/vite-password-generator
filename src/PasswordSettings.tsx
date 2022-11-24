@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-
+import Checkbox from "./Checkbox";
 const StyledRange = styled.input<any>`
   &::-webkit-slider-runnable-track {
     width: 100%;
@@ -44,6 +44,12 @@ const PasswordSettings = () => {
         max={20}
         min={1}
       />
+      <div className="flex flex-col items-start space-y-5">
+        <Checkbox id="uppercase" label="Include Uppercase Letters" />
+        <Checkbox id="lowercase" label="Include Lowercase Letters" />
+        <Checkbox id="numbers" label="Include Numbers" />
+        <Checkbox id="symbols" label="Include Symbols" />
+      </div>
     </form>
   );
 };
