@@ -1,5 +1,5 @@
-import PasswordSettings from "./PasswordSettings";
-import PasswordTable from "./PasswordTable";
+import PasswordSettings from "./components/PasswordSettings";
+import PasswordTable from "./components/PasswordTable";
 const App = () => {
   return (
     <main className="flex flex-col items-center my-16 space-y-10">
