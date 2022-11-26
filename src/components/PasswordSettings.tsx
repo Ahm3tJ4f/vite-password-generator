@@ -32,7 +32,7 @@ const PasswordSettings = () => {
         htmlFor="password-length"
       >
         <span className=" ">Character Length</span>
-        <span className="text-primaryGreen text-3xl">{length}</span>
+        <span className="text-primaryGreen text-2xl">{length}</span>
       </label>
 
       <StyledRange
