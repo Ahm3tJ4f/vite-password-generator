@@ -1,23 +1,6 @@
 import { useState } from "react";
-import styled from "styled-components";
 import Checkbox from "./Checkbox";
-const StyledRange = styled.input<any>`
-  &::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-
-    background: linear-gradient(
-      to right,
-      #a4ffaf 0%,
-      #a4ffaf ${(props) => (props.value / 20) * 95 + "%"},
-      white ${(props) => (props.value / 20) * 95 + "%"},
-      white 100%
-    );
-  }
-`;
-
+import { StyledRange } from "../styles/SliderStyle";
 const PasswordSettings = () => {
   const [length, setLength] = useState(10);
 
@@ -32,7 +15,7 @@ const PasswordSettings = () => {
         htmlFor="password-length"
       >
         <span className=" ">Character Length</span>
-        <span className="text-primaryGreen text-3xl">{length}</span>
+        <span className="text-primaryGreen text-2xl">{length}</span>
       </label>
 
       <StyledRange
@@ -44,6 +27,7 @@ const PasswordSettings = () => {
         max={20}
         min={1}
       />
+
       <div className="flex flex-col items-start space-y-5">
         <Checkbox id="uppercase" label="Include Uppercase Letters" />
         <Checkbox id="lowercase" label="Include Lowercase Letters" />
