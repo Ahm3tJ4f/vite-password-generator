@@ -22,5 +22,3 @@ body {
 .contentBox{
     @apply  flex rounded-2xl w-96  bg-[#2B2A33] px-8 py-7;
 }
-
-
